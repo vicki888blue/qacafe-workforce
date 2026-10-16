@@ -27,6 +27,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+           pip install flake8
+
+      - name: Run Flake8 linting
+  run: |
+    flake8 .
 
       # TODO: Add flake8 linting here
 
