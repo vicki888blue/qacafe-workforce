@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify, render_template
 from database import conn, cursor
 
+
 # Create the Flask application
 app = Flask(__name__)
+
 
 # Home page
 @app.route("/")
@@ -10,6 +12,8 @@ def home():
     return render_template("index.html")
 
 # Employees endpoint
+
+
 @app.route("/employees", methods=["GET", "POST"])
 def manage_employees():
 
