@@ -30,7 +30,7 @@ jobs:
            pip install flake8
 
       - name: Run Flake8 linting
-  run: |
+        run: |
     flake8 .
 
       # TODO: Add flake8 linting here
